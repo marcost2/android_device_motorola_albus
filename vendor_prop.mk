@@ -178,7 +178,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.radio.imei.sv=13 \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ro.build.vendorprefix=/vendor \
-    ro.telephony.iwlan_operation_mode=legacy
+    ro.telephony.iwlan_operation_mode=legacy \
+    persist.vendor.radio.enableadvancedscan=false
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ril.subscription.types=NV,RUIM \
