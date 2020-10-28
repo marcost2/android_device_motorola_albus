@@ -267,3 +267,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Watchdog
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hw_timeout_multiplier=3
+
+# Zygote
+PRODUCT_PROPERTY_OVERRIDES += \
+    zygote.critical_window.minute=10
