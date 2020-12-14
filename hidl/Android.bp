@@ -1,0 +1,6 @@
+subdirs = [
+    "dumpstate",
+    "light",
+    "thermal",
+    "vibrator",
+]

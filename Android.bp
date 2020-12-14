@@ -1,4 +1,4 @@
 subdirs = [
     "health",
-    "light",
+    "hidl",
 ]
