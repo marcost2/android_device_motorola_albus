@@ -183,8 +183,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
     debug.stagefright.omx_default_rank=0
-    
- 
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     media.settings.xml=/vendor/etc/media_profiles.xml \

@@ -21,8 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -102,11 +101,12 @@ PRODUCT_COPY_FILES += \
 # Browser
 PRODUCT_PACKAGES += \
     Gello
-    
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0 \
     libbt-vendor
+
 #Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -118,7 +118,7 @@ PRODUCT_PACKAGES += \
     libxml2 \
     Camera2 \
     Snap \
-    libwui 
+    libwui
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/msm8953_mot_albus_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/msm8953_mot_albus_camera.xml \
@@ -131,8 +131,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/com.motorola.camera/always_aware_ocr.json:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/com.motorola.camera/always_aware_ocr.json
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-albus.xml:system/etc/permissions/privapp-permissions-albus.xml 
-    
+    $(LOCAL_PATH)/configs/privapp-permissions-albus.xml:system/etc/permissions/privapp-permissions-albus.xml
+
 # LineageActions
 PRODUCT_PACKAGES += \
     LineageActions
@@ -156,7 +156,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libvulkan \
     libtinyxml
-    
+
 PRODUCT_PACKAGES += android.hardware.media.omx
 
 # RenderScript HAL
@@ -192,7 +192,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
-    
+
 # GPS
 PRODUCT_PACKAGES += \
     libvehiclenetwork-native \
@@ -214,7 +214,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     $(LOCAL_PATH)/gps/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem
 
-# health
+# Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service.albus
 
@@ -235,7 +235,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
-    
+
 # IDC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc
@@ -255,7 +255,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.1-service.clearkey
-
 
 #PRODUCT_COPY_FILES += \
 #    $(LOCAL_PATH)/configs/qdcm_calib_data_mipi_mot_cmd_smd_1080p_549_alb.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_549_alb.xml
@@ -348,8 +347,9 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.mmi.usb.rc \
     init.qcom.rc \
-    init.albus.rc 
+    init.albus.rc
 
+# Powerhint configuration file
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/rootdir/etc/ueventd.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
@@ -364,7 +364,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/configs/powerhint.xml:system/etc/powerhint.xml \
 
-#RIL
+# RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.2 \
     android.hardware.radio.config@1.0 \

@@ -22,8 +22,6 @@ TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 BOARD_VENDOR := motorola-qcom
 
-WITH_LINEAGE_CHARGER := false
-
 # AIDs and CAPS
 TARGET_FS_CONFIG_GEN += \
     $(DEVICE_PATH)/fs_config/file_caps.fs \
@@ -191,7 +189,7 @@ TARGET_HAS_HDR_DISPLAY := true
 VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 #TARGET_USES_COLOR_METADATA := true
 
-# exfat
+# ExFat
 TARGET_EXFAT_DRIVER := exfat
 
 # FM
@@ -206,14 +204,11 @@ TARGET_PROVIDES_KEYMASTER := true
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
-# Lineage Hardware
-BOARD_HARDWARE_CLASS += \
-    $(DEVICE_PATH)/lineagehw
-
 # Manifest
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/compatibility_matrix.xml
 
+# NFC
 NXP_CHIP_TYPE := PN551
 BOARD_NFC_HAL_SUFFIX := $(TARGET_BOARD_PLATFORM)
 
