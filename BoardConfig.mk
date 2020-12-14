@@ -25,7 +25,10 @@ BOARD_VENDOR := motorola-qcom
 WITH_LINEAGE_CHARGER := false
 
 # AIDs and CAPS
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+TARGET_FS_CONFIG_GEN += \
+    $(DEVICE_PATH)/fs_config/file_caps.fs \
+    $(DEVICE_PATH)/fs_config/mot_aids.fs \
+    $(DEVICE_PATH)/fs_config/qcom_aids.fs
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8953
