@@ -101,7 +101,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.gralloc.enable_fb_ubwc=1 \
     debug.sf.recomputecrop=0 \
     ro.opengles.version=196610 \
-    ro.qualcomm.cabl=0
+    ro.qualcomm.cabl=0 \
+    debug.renderengine.backend=threaded
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
