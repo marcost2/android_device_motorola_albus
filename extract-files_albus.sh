@@ -64,6 +64,13 @@ fi
 function blob_fixup() {
     case "${1}" in
 
+    # Fix missing symbols
+    product/lib64/lib-imscamera.so | product/lib64/lib-imsvideocodec.so | product/lib/lib-imscamera.so | product/lib/lib-imsvideocodec.so)
+        for LIBGUI_SHIM in $(grep -L "libgui_shim.so" "${2}"); do
+            "${PATCHELF}" --add-needed "libgui_shim.so" "${LIBGUI_SHIM}"
+        done
+    ;;
+
     # Fix fingerprint UHID
     vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc)
         sed -i 's/group system input 9015/group system uhid input 9015/' "${2}"
@@ -110,6 +117,12 @@ function blob_fixup() {
             "${PATCHELF}" --add-needed "libmemset_shim.so" "$LIBMEMSET_SHIM"
         done
         ;;
+     # Fix missing symbols
+    vendor/lib/libmot_gpu_mapper.so)
+        for LIBGUI_SHIM in $(grep -L "libgui_shim_vendor.so" "${2}"); do
+            "${PATCHELF}" --add-needed "libgui_shim_vendor.so" "${LIBGUI_SHIM}"
+        done
+    ;;    
 
     esac
 }
