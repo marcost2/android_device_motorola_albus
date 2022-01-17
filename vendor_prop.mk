@@ -238,3 +238,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.usb.bpt_adb=2ee6 \
     ro.usb.bpteth=2ee7 \
     ro.usb.bpteth_adb=2ee8
+
+# Watchdog
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hw_timeout_multiplier=3
