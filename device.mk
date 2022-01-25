@@ -387,7 +387,7 @@ PRODUCT_PACKAGES += \
     wlan_carrier_bin.sh
 
 PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/rootdir/etc/ueventd.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
+     $(LOCAL_PATH)/rootdir/etc/ueventd.qcom.rc:$(TARGET_OUT_VENDOR_ETC)/ueventd.rc
 
 # RenderScript
 PRODUCT_PACKAGES += \
