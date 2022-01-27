@@ -64,7 +64,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     camera.device@3.2-impl \
@@ -387,7 +386,7 @@ PRODUCT_PACKAGES += \
     wlan_carrier_bin.sh
 
 PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/rootdir/etc/ueventd.qcom.rc:$(TARGET_OUT_VENDOR_ETC)/ueventd.rc
+     $(LOCAL_PATH)/rootdir/etc/ueventd.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
