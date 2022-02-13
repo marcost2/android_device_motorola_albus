@@ -103,7 +103,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
     ro.qualcomm.cabl=0 \
     debug.renderengine.backend=threaded \
-    renderthread.skia.reduceopstasksplitting=true # (b/183612348): Enable skia reduceOpsTaskSplitting 
+    renderthread.skia.reduceopstasksplitting=true \
+    vendor.display.disable_scaler=1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
