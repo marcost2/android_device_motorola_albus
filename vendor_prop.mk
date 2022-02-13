@@ -91,7 +91,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=1 \
     debug.egl.hw=1 \
     persist.hwc.mdpcomp.enable=true \
-    debug.sf.disable_backpressure=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.display.disable_skip_validate=1 \
     vendor.video.disable.ubwc=1 \
