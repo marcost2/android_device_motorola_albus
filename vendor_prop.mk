@@ -47,7 +47,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.offload.min.duration.secs=60
 
 # Bluetooth
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.device.class_of_device=90,2,12 \
     bluetooth.profile.asha.central.enabled=true \
     bluetooth.profile.a2dp.source.enabled=true \
     bluetooth.profile.avrcp.target.enabled=true \
