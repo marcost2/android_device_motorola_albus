@@ -47,11 +47,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.offload.min.duration.secs=60
 
 # Bluetooth
-PRODUCT_PROPERTY_OVERRIDES += \
-    bluetooth.hfp.client=1 \
-    ro.qualcomm.bt.hci_transport=smd \
-    persist.vendor.qcom.bluetooth.enable.splita2dp=false
-
 PRODUCT_PRODUCT_PROPERTIES += \
     bluetooth.profile.asha.central.enabled=true \
     bluetooth.profile.a2dp.source.enabled=true \
@@ -73,8 +68,14 @@ PRODUCT_PRODUCT_PROPERTIES += \
     bluetooth.profile.pbap.server.enabled=true \
     bluetooth.profile.sap.server.enabled=true \
     bluetooth.profile.tbs.server.enabled=true \
-    bluetooth.profile.vc.server.enabled=true
-
+    bluetooth.profile.vc.server.enabled=true \
+    bt.max.hfpclient.connections=1 \
+    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
+    vendor.qcom.bluetooth.soc=cherokee \
+    ro.bluetooth.a4wp=false \
+    bluetooth.hfp.client=1 \
+    ro.qualcomm.bt.hci_transport=smd \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=false
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
