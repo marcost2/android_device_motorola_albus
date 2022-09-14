@@ -23,6 +23,7 @@
         <value>5</value>
         <value>2</value>
     </array>
+    <item name="bluetooth.controller.voltage">3300</item>
     <array name="cpu.clusters.cores">
         <value>8</value>
     </array>
