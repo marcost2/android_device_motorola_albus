@@ -411,7 +411,7 @@ PRODUCT_PACKAGES += \
     libcutils_shim \
     libshim_camera \
     libmemset_shim \
-    libqsapshim
+    libqsap_shim
 
 # Shipping API
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
