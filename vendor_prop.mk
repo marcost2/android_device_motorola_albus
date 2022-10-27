@@ -200,6 +200,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ro.build.vendorprefix=/vendor \
     ro.telephony.iwlan_operation_mode=legacy \
+    ro.telephony.block_binder_thread_on_incoming_calls=false \
     persist.vendor.radio.enableadvancedscan=false
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
