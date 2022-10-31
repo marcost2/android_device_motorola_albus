@@ -167,6 +167,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
 
 # RIL
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.telephony.block_binder_thread_on_incoming_calls=false
+
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ims.dropset_feature=0 \
     persist.vendor.ims.disableADBLogs=0 \
@@ -200,7 +203,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ro.build.vendorprefix=/vendor \
     ro.telephony.iwlan_operation_mode=legacy \
-    ro.telephony.block_binder_thread_on_incoming_calls=false \
     persist.vendor.radio.enableadvancedscan=false
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
