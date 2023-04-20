@@ -123,7 +123,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
     ro.qualcomm.cabl=0 \
     debug.renderengine.backend=skiaglthreaded \
-    renderthread.skia.reduceopstasksplitting=true \
     vendor.display.disable_scaler=1 \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=msm8953
