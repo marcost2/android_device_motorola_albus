@@ -37,10 +37,12 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio.effect@5.0-impl \
     audio.a2dp.default \
+    audio.primary.msm8953 \
     audio.r_submix.default \
     audio.usb.default \
     libaacwrapper \
     libaudio-resampler \
+    libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
@@ -359,6 +361,7 @@ PRODUCT_PACKAGES += \
     init.albus.rc 
 
 PRODUCT_PACKAGES += \
+    init.mmi.usb.sh \
     init.mmi.laser.sh \
     init.qcom.sh \
     wlan_carrier_bin.sh \
@@ -441,7 +444,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor 
    
 # Vibrator
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 

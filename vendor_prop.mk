@@ -56,7 +56,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.HAL3.enabled=1 \
     vendor.vidc.enc.dcvs.extra-buff-count=2 \
-    persist.camera.eis.enable=1
+    persist.camera.eis.enable=1 \
+    persist.camera.global.debug=6
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
