@@ -365,6 +365,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.mmi.laser.sh \
+    init.mmi.usb.sh \
     init.qcom.sh \
     init.gbmods.sh \
     init.qcom.early_boot.sh \
